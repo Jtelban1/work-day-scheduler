@@ -106,7 +106,7 @@ $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'))
 
 
 
-$(".submit-btn").on("click", function () {
+$(".saveBtn").on("click", function () {
 
     var textValue = $(this).siblings('.form-control').val();
     var hour = $(this).parent().attr("id");
@@ -119,10 +119,10 @@ $(".submit-btn").on("click", function () {
 
 
 function updateBackground() {
-    //get time with moment.js
+   
     var time = moment().hours();
 
-    $(".hourblock").each(function () {
+    $(".time-block").each(function () {
         var value = parseInt($(this).attr("value"))
         if (time > value) {
             $(this).children().addClass("past")
@@ -138,7 +138,11 @@ function updateBackground() {
    
 
 }
-    </script>
+ function updateBackground()
+    
+    
+
+</script>
     
 </body>
 ​
